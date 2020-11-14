@@ -21,4 +21,4 @@ if [ -z "$CLI_OPTIONS" ]; then
     fi
 fi
 
-rtl_433 $CLI_OPTIONS
+exec rtl_433 $CLI_OPTIONS
