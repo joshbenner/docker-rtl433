@@ -2,7 +2,7 @@
 
 # Accept all params on docker run CLI too.
 if [ ! $# -eq 0 ]; then
-    exec rtl_433 "$@"
+    exec rtl_433 $@
 fi
 
 if [ -z "$CLI_OPTIONS" ]; then
@@ -21,4 +21,4 @@ if [ -z "$CLI_OPTIONS" ]; then
     fi
 fi
 
-rtl_433 "$CLI_OPTIONS"
+rtl_433 $CLI_OPTIONS
