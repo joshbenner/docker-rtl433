@@ -17,8 +17,9 @@ if [ -z "$CLI_OPTIONS" ]; then
     fi
 
     if [ ! -z "$OUTPUT" ]; then
-        CLI_OPTIONS="$CLI_OPTIONS -F \"$OUTPUT\""
+        CLI_OPTIONS="$CLI_OPTIONS -F $OUTPUT"
     fi
 fi
 
+echo "CLI: rtl_433 $CLI_OPTIONS"
 exec rtl_433 $CLI_OPTIONS
